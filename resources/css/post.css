@@ -74,9 +74,16 @@
             gap: 10px 0;
 
             & > div {
+                align-items: start;
                 padding-left: 0;
                 border-left: none;
             }
+        }
+
+        .post-categories {
+            padding-left: 0;
+            li {display: block;}
+            li + li {margin-left: 0;}
         }
     }
 }
