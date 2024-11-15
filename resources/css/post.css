@@ -1,0 +1,118 @@
+.post-single, .page-main {
+    .center {
+        max-width: 900px;
+    }
+
+    .title {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .metadata {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0 15px;
+        padding: 10px 0;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        margin: 30px 0;
+        font-size: 14px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0 10px;
+            border-left: 1px solid #f0f0f0;
+            padding-left: 15px;
+        }
+
+        ul, ol {
+            list-style: none;
+            margin: 0;
+            li + li {margin-top: 0;}
+        }
+
+        strong {font-weight: 500;}
+    }
+
+    .post-categories {
+        li {display: inline-block;}
+        li + li {margin-left: 10px;}
+    }
+
+    p + p {margin-top: 20px;}
+
+    strong {font-weight: 600;}
+
+    figure {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    blockquote {
+        margin: 30px 0;
+        font-style: italic;
+        border-left: 2px solid #1e1e1e;
+        padding-left: 20px;
+    }
+
+    ul, ol {
+        margin: 30px 0;
+        li + li {margin-top: 10px;}
+    }
+
+    hr {margin: 30px 0;}
+}
+
+.post-item {
+    display: flex;
+    flex-direction: column;
+
+    .thumb {
+        max-height: 250px;
+        min-height: 250px;
+        overflow: hidden;
+        display: flex;
+        border-radius: 15px;
+        border: 3px solid var(--blue);
+
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: auto;
+    }
+
+    .foot {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        color: #515151;
+    }
+
+    @media (max-width: 991px) {
+        .thumb {
+            max-height: 200px;
+            min-height: 200px;
+        }
+    }
+
+    @media (max-width: 550px) {
+        .thumb {
+            max-height: 250px;
+            min-height: 250px;
+        }
+    }
+}

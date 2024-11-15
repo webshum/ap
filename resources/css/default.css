@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hexa: 400px;
+    --blue: #3a75c4;
+    --yellow: #fadd17;
+}
+
+.wrapper {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: 50px 0;
+}
+
+.center {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1e1e1e;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+h1.title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: all 0.3s;
+}
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.hidden {display: none;}
+.svg-sprite {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+.tx-c,
+.has-text-align-center {text-align: center;}
+.tx-c,
+.has-text-align-left {text-align: left;}
+.tx-c,
+.has-text-align-right {text-align: right;}
+
+.btn {
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0 10px;
+
+    svg {
+        width: 6px;
+        height: 12px;
+        fill: var(--blue);
+        transition: all 0.3s;
+        position: relative;
+        top: 1px;
+    }
+
+    &:hover svg {fill: #000;}
+}
+
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
